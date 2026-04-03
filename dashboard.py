@@ -266,7 +266,7 @@ with col3:
         name="Daily Interactions",
         hovertemplate="%{x}: %{y} scans<extra></extra>"
     ))
-    fig3.update_layout(title="Daily Interaction Volume", , height=300)
+    fig3.update_layout(title="Daily Interaction Volume", height=300)
     st.plotly_chart(fig3, use_container_width=True)
 
 with col4:
