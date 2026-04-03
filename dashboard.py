@@ -222,7 +222,7 @@ with col1:
         color="Count", color_continuous_scale=["#0052D4", "#00A8E8"],
         title="Consumer Concerns by Volume"
     )
-    fig1.update_layout(, coloraxis_showscale=False, height=340)
+    fig1.update_layout(coloraxis_showscale=False, height=340)
     fig1.update_traces(marker_line_width=0)
     st.plotly_chart(fig1, use_container_width=True)
 
