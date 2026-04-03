@@ -297,7 +297,7 @@ with col5:
         color_discrete_sequence=BRAND_COLORS,
         title="By Product Category"
     )
-    fig5.update_layout(, height=300)
+    fig5.update_layout(height=300)
     fig5.update_traces(textfont_color="#111827")
     st.plotly_chart(fig5, use_container_width=True)
 
