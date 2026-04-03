@@ -146,8 +146,8 @@ PLOTLY_LAYOUT = dict(
     title_font=dict(family="Cormorant Garamond", color="#111827", size=18),
     legend=dict(bgcolor="rgba(255,255,255,0.8)", bordercolor="#dde3ec"),
     margin=dict(l=20, r=20, t=50, b=20),
-    xaxis=dict(gridcolor="#e5e7eb", linecolor="#dde3ec", tickcolor="#dde3ec", tickfont=dict(color="#374151")),
-    yaxis=dict(gridcolor="#e5e7eb", linecolor="#dde3ec", tickcolor="#dde3ec", tickfont=dict(color="#374151")),
+    xaxis=dict(gridcolor="#e5e7eb", linecolor="#dde3ec", tickcolor="#dde3ec"),
+    yaxis=dict(gridcolor="#e5e7eb", linecolor="#dde3ec", tickcolor="#dde3ec"),
 )
 BRAND_COLORS = ["#00A8E8", "#0052D4", "#00D4A8", "#7B61FF", "#FF6B6B", "#FFB347", "#4CAF50"]
 
