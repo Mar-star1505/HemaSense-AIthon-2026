@@ -314,7 +314,7 @@ with col6:
             showscale=True,
             hovertemplate="%{y} × %{x}: %{z} users<extra></extra>"
         ))
-        fig6.update_layout(title="Demand Heatmap", , height=300)
+        fig6.update_layout(title="Demand Heatmap", height=300)
         st.plotly_chart(fig6, use_container_width=True)
     except Exception:
         st.info("More data needed for heatmap.")
