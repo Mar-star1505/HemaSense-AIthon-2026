@@ -139,16 +139,16 @@ st.markdown(css, unsafe_allow_html=True)
 # ============================================================
 # PLOTLY LIGHT TEMPLATE
 # ============================================================
-PLOTLY_LAYOUT = dict(
-    paper_bgcolor="rgba(255,255,255,0)",
-    plot_bgcolor="rgba(255,255,255,0)",
-    font=dict(family="DM Sans", color="#374151", size=12),
-    title_font=dict(family="Cormorant Garamond", color="#111827", size=18),
-    legend=dict(bgcolor="rgba(255,255,255,0.8)", bordercolor="#dde3ec"),
-    margin=dict(l=20, r=20, t=50, b=20),
-    xaxis=dict(gridcolor="#e5e7eb", linecolor="#dde3ec", tickcolor="#dde3ec"),
-    yaxis=dict(gridcolor="#e5e7eb", linecolor="#dde3ec", tickcolor="#dde3ec"),
-)
+# PLOTLY_LAYOUT = dict(
+#     paper_bgcolor="rgba(255,255,255,0)",
+#     plot_bgcolor="rgba(255,255,255,0)",
+#     font=dict(family="DM Sans", color="#374151", size=12),
+#     title_font=dict(family="Cormorant Garamond", color="#111827", size=18),
+#     legend=dict(bgcolor="rgba(255,255,255,0.8)", bordercolor="#dde3ec"),
+#     margin=dict(l=20, r=20, t=50, b=20),
+#     xaxis=dict(gridcolor="#e5e7eb", linecolor="#dde3ec", tickcolor="#dde3ec"),
+#     yaxis=dict(gridcolor="#e5e7eb", linecolor="#dde3ec", tickcolor="#dde3ec"),
+# )
 BRAND_COLORS = ["#00A8E8", "#0052D4", "#00D4A8", "#7B61FF", "#FF6B6B", "#FFB347", "#4CAF50"]
 
 # ============================================================
@@ -222,7 +222,7 @@ with col1:
         color="Count", color_continuous_scale=["#0052D4", "#00A8E8"],
         title="Consumer Concerns by Volume"
     )
-    fig1.update_layout(**PLOTLY_LAYOUT, coloraxis_showscale=False, height=340)
+    fig1.update_layout(, coloraxis_showscale=False, height=340)
     fig1.update_traces(marker_line_width=0)
     st.plotly_chart(fig1, use_container_width=True)
 
@@ -243,7 +243,7 @@ with col2:
         x=0.5, y=0.5, showarrow=False,
         font=dict(size=18, color="#111827", family="Cormorant Garamond")
     )
-    fig2.update_layout(title="Budget Distribution", **PLOTLY_LAYOUT, height=340,
+    fig2.update_layout(title="Budget Distribution", , height=340,
                        showlegend=True, legend=dict(orientation="h", y=-0.15))
     st.plotly_chart(fig2, use_container_width=True)
 
@@ -266,7 +266,7 @@ with col3:
         name="Daily Interactions",
         hovertemplate="%{x}: %{y} scans<extra></extra>"
     ))
-    fig3.update_layout(title="Daily Interaction Volume", **PLOTLY_LAYOUT, height=300)
+    fig3.update_layout(title="Daily Interaction Volume", , height=300)
     st.plotly_chart(fig3, use_container_width=True)
 
 with col4:
@@ -279,7 +279,7 @@ with col4:
         color_discrete_sequence=BRAND_COLORS,
         title="Consumer Language Preference"
     )
-    fig4.update_layout(**PLOTLY_LAYOUT, height=300, showlegend=False)
+    fig4.update_layout(, height=300, showlegend=False)
     fig4.update_traces(marker_line_width=0)
     st.plotly_chart(fig4, use_container_width=True)
 
@@ -297,7 +297,7 @@ with col5:
         color_discrete_sequence=BRAND_COLORS,
         title="By Product Category"
     )
-    fig5.update_layout(**PLOTLY_LAYOUT, height=300)
+    fig5.update_layout(, height=300)
     fig5.update_traces(textfont_color="#111827")
     st.plotly_chart(fig5, use_container_width=True)
 
@@ -314,7 +314,7 @@ with col6:
             showscale=True,
             hovertemplate="%{y} × %{x}: %{z} users<extra></extra>"
         ))
-        fig6.update_layout(title="Demand Heatmap", **PLOTLY_LAYOUT, height=300)
+        fig6.update_layout(title="Demand Heatmap", , height=300)
         st.plotly_chart(fig6, use_container_width=True)
     except Exception:
         st.info("More data needed for heatmap.")
