@@ -6,7 +6,7 @@
 
 | Application | URL |
 |-------------|-----|
-| Consumer Web Form | [Click Here](https://hemasense-consumer.streamlit.app) |
+| Consumer Web Form | [Click Here](https://hemasense-consumer-app.streamlit.app) |
 | Marketing Dashboard | [Click Here](https://hemasense-dashboard.streamlit.app) |
 
 ## 📋 About
