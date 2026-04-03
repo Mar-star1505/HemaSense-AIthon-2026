@@ -279,7 +279,7 @@ with col4:
         color_discrete_sequence=BRAND_COLORS,
         title="Consumer Language Preference"
     )
-    fig4.update_layout(, height=300, showlegend=False)
+    fig4.update_layout(height=300, showlegend=False)
     fig4.update_traces(marker_line_width=0)
     st.plotly_chart(fig4, use_container_width=True)
 
