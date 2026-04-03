@@ -286,7 +286,7 @@ st.markdown(custom_css, unsafe_allow_html=True)
 # ============================================================
 st.markdown(
     f'''<div class="hs-logo-wrap">
-        <img src="data:image/png;base64,{"logo.png"}" alt="HemaSense Logo" />
+        <img src="https://raw.githubusercontent.com/Mar-star1505/Hemasense-Aithon-2026/main/logo.png" alt="HemaSense Logo" />
     </div>''',
     unsafe_allow_html=True
 )
