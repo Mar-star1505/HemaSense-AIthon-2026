@@ -39,10 +39,6 @@ st.set_page_config(
 )
 
 # ============================================================
-# LOGO — embedded as base64 so it works on Streamlit Cloud
-# ============================================================
-
-# ============================================================
 # FULL DARK THEME CSS — HemaSense Brand System
 # ============================================================
 custom_css = """
@@ -286,7 +282,7 @@ st.markdown(custom_css, unsafe_allow_html=True)
 # ============================================================
 st.markdown(
     f'''<div class="hs-logo-wrap">
-        <img src="https://raw.githubusercontent.com/Mar-star1505/Hemasense-Aithon-2026/main/logo.png" alt="HemaSense Logo" />
+        <img src="https://raw.githubusercontent.com/Mar-star1505/Hemasense-Aithon-2026/main/logo.png" alt="HemaSense Logo" style="width:280px; display:block; margin:0 auto;" />
     </div>''',
     unsafe_allow_html=True
 )
