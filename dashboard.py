@@ -243,7 +243,7 @@ with col2:
         x=0.5, y=0.5, showarrow=False,
         font=dict(size=18, color="#111827", family="Cormorant Garamond")
     )
-    fig2.update_layout(title="Budget Distribution", , height=340,
+    fig2.update_layout(title="Budget Distribution",height=340,
                        showlegend=True, legend=dict(orientation="h", y=-0.15))
     st.plotly_chart(fig2, use_container_width=True)
 
